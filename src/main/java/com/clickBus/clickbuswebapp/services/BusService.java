@@ -59,7 +59,7 @@ public class BusService {
                 returnObject.put("Message", "Place Not Found with the name - " + name);
             }
         } catch (DuplicateKeyException e) {
-            returnObject.put("Message", "Place is already present with the name - " + name);
+            returnObject.put("Message", "Place is already present with the name - " + place.getName());
             returnObject.put("Exception", e);
         }
         return returnObject;
